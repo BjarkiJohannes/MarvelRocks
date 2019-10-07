@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0px;
+    height: 80em;
+  }
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 25% 10% auto 10%;
+    grid-template-areas:
+      " header header header "
+      " nav nav nav "
+      " aside main article "
+      " footer footer footer ";
+  }
+
+  header {
+    margin:0;
+    padding:0;
+    grid-area: header;
+  }
+  header ul{
+    margin:0;
+    padding:0;
+  }
+  
+  header{
+      height: 100%;
+    padding: 1em;
+    border: 1px solid;
+    border-bottom:0;
+    background: url(http://www.emilysfreshkitchen.com/wp-content/uploads/2018/06/icon2-keto.png);
+    width: 0 auto;
+    }
+    
+    header h1{
+    text-align: center;
+    
+  }
+
+  nav {
+    grid-area: nav;
+    border: solid black;
+    border-width: 1px 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  aside {
+    grid-area: aside;
+    border: solid black;
+    border-width: 0px 1px 0px 1px;
+  }
+  article {
+    grid-area: article;
+    border: solid black;
+    border-width: 0px 1px 0px 1px;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+    border: solid black;
+    border-width: 1px 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  p, h4 {
+    margin: 10px;
+  }
+  
+  nav ul, footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    
+  }
+  
+  li a {
+    color: rgb(9, 109, 241);
+    text-decoration: none;
+    
+  }
+  
+  
